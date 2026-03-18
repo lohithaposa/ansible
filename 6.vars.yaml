@@ -1,6 +1,6 @@
 - name: files in the variables
   hosts: local
-  connection: yes
+  connection: local
   vars_files:  #from course.yaml file you are loading the variables.
   - course.yaml
   tasks:
