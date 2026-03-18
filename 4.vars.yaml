@@ -3,10 +3,10 @@
   connection: local  #By  giving connection as local you cannoot enter user name and password.
   vars:
     Course: "DevOps"
-    Traininghours: "120"
+    traininghours: "120"
   tasks:
   - name: print the variables
     ansible.builtin.debug:
-      msg : "Course is :{{ Course }} , Training hours is :{{ TrainingHours }}" #Double flower braces inside the variable name to get the variable
+      msg : "Course is :{{ Course }} , traininghours is :{{ traininghours }}" #Double flower braces inside the variable name to get the variable
 
       
