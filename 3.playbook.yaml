@@ -1,7 +1,8 @@
--name: playbook
-hosts: web
+- name: playbook
+  hosts: web
 #hosts: frontend
-tasks:
-  ansible.builtin.debug:
-   msg: Hello
+  tasks:
+  - name : print hello
+    ansible.builtin.debug:
+    msg: "Hello"
  
