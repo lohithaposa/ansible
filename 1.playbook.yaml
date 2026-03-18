@@ -1,6 +1,6 @@
 - name: ping the server
-  #hosts: web
-  hosts: frontend
+  hosts: web
+  #hosts: frontend
   tasks:
    - name: ping the web server
      ansibile.builtin.ping:
