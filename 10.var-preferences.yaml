@@ -6,9 +6,9 @@
   # vars_files:
   #   - course.yaml
   vars_prompt:
-    - name: username 
-      prompt: Please enter username
-      private: false
+  - name: username 
+    prompt: Please enter username
+    private: false
   tasks:
   - name: Task level variable
     # vars:
