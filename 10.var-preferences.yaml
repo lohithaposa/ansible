@@ -11,6 +11,7 @@
       private: false
   tasks:
   - name: Task level variable
+    vars:
     Course: "Ansible from task level"
     ansible.builtin.debug:   
       msg: "Course is: {{ Course}}"
