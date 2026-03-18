@@ -1,12 +1,12 @@
 - name: play level variables
   hosts: local
   connection: local  #By  giving connection as local you cannoot enter user name and password.
-  var:
+  vars:
     Course: "DevOps"
-    Training hours: "120"
+    Traininghours: "120"
   tasks:
   - name: print the variables
     ansible.builtin.debug:
-      msg : "Course is :{{ Course }} , Training hours is :{{ Training Hours }}" #Double flower braces inside the variable name to get the variable
+      msg : "Course is :{{ Course }} , Training hours is :{{ TrainingHours }}" #Double flower braces inside the variable name to get the variable
 
       
