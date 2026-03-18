@@ -1,0 +1,12 @@
+- name : tasks level variables
+  hosts: local
+  connection : yes
+  vars:
+    Course : "DevOps"
+    Training hours: "120"
+  tasks:
+  - name : print the variables
+    vars:
+      Course : "Ansible"
+    ansible.builtin.debug:
+      msg : "Course is :{{ Course }} , Training hours is :{{ Training Hours }}"
