@@ -7,5 +7,5 @@
     - name: check live or not
       ansible.builtin.debug:
         msg: "yes it is live"
-      when: Is_live 
+     # when: Is_live 
  
