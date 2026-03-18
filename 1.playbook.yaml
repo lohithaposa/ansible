@@ -3,6 +3,6 @@
   #hosts: frontend
   tasks:
    - name: ping the web server
-     ansibile.builtin.ping:
+     ansible.builtin.ping:
    
  
