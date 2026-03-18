@@ -1,23 +1,50 @@
-- name: variable preferences
+# - name: variable preferences
+#   hosts: local
+#   connection: local
+#   # vars:
+#   #   NAME: "Ansible from Play level"
+#   # vars_files:
+#   #   - course.yaml
+#   vars_prompt:
+#   - name: username 
+#     prompt: Please enter username
+#     private: false
+#   tasks:
+#   - name: Task level variable
+#     # vars:
+#     #  Course: "Ansible from task level"
+#     ansible.builtin.debug:   
+#       msg: "Name is: {{ NAME }}"
+
+
+# #!.Args
+#  # 2.tasks
+#  #3.files
+#  #4.play
+
+
+
+- name: variable preference
   hosts: local
   connection: local
-  # vars:
-  #   NAME: "Ansible from Play level"
-  # vars_files:
-  #   - course.yaml
+  vars:
+    NAME: "Ansible from PLAY"
+  vars_files:
+  - course.yaml
   vars_prompt:
-  - name: username 
-    prompt: Please enter username
+  - name: NAME
+    prompt: Please enter name
     private: false
   tasks:
-  - name: Task level variable
-    # vars:
-    #  Course: "Ansible from task level"
-    ansible.builtin.debug:   
-      msg: "Name is: {{ NAME }}"
+  - name: print name
+    vars:
+      NAME: "Ansible from TASK"
+    ansible.builtin.debug:
+      msg: "Hi {{ NAME }}"
 
-
-#!.Args
- # 2.tasks
- #3.files
- #4.play
+# 1. Args
+# 2. Task
+# 3. File
+# 4. Prompt
+# 5. Play
+# 6. Inventory
