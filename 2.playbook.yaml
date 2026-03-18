@@ -1,15 +1,15 @@
-- name: Nginx install
+- name: Nginx install and run
   hosts: local
-  become: true
+  become: yes
   tasks:
   - name: Install Nginx
-    ansible.builtin.package:
-    name: Nginx
-    state: present
+    ansible.builtin.package: #(Heterogenous Distribution:  Ansible will connect to RHEL ,package manager is yum or dnf ...it will convert to dnf ..under gathering facts )
+      name: Nginx
+      state: present
 
   - name: Start Nginx
     ansible.builtin.services:
-    name: nginx
-    state: started
-    enable: yes 
+      name: nginx
+      state: started
+      enable: yes 
      
