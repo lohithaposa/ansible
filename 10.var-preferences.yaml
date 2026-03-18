@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    NAME= "Ansible from Play level"
+    NAME: "Ansible from Play level"
   vars_files:
    - course.yaml
   vars_prompt:
