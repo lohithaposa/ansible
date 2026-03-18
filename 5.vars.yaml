@@ -1,12 +1,14 @@
-- name : tasks level variables
+- name: tasks level variables
   hosts: local
-  connection : yes
+  connection: local
   vars:
-    Course : "DevOps"
-    Training hours: "120"
+    Course: "DevOps" 
+    Traininghours: "120"
   tasks:
-  - name : print the variables
+  - name: print the variables
     vars:
-      Course : "Ansible"
+      Course: "Ansible"
     ansible.builtin.debug:
-      msg : "Course is :{{ Course }} , Training hours is :{{ Training Hours }}"
+      msg: "Course is: {{ Course }} , Traininghours is: {{ TrainingHours }}"
+# Inheritence : globally getting the vars,overide the vars.
+ 
