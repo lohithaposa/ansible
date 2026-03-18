@@ -8,7 +8,7 @@
    Details: # map/dic
     Months: 4
     Trainer: "Sam"
-  Topics: #Lists 
+   Topics: #Lists 
     - Docker
     - K8
     - Ansible
@@ -19,4 +19,4 @@
        COURSE: {{ Course }}
        Duration: {{ Hours }}
        Is_live: {{ Is_live }}
-       
+
