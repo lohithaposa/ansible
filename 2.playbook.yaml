@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: Install Nginx
-    ansible.builtin.package: #(Heterogenous Distribution:  Ansible will connect to RHEL ,package manager is yum or dnf ...it will convert to dnf ..under gathering facts )
+    ansible.builtin.package: #(Heterogenous Distribution:  Ansible will connect to RHEL ,package manager is yum or dnf ...it will convert to dnf ..under gathering facts...if we for ubuntu it opt for apt )
       name: nginx
       state: present
 
