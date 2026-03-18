@@ -13,6 +13,6 @@
     - name: Task level variable
       Course: "Ansible from task level"
       ansible.builtin.debug:   
-        msg: Course is : {{ Course}}
+        msg: "Course is : {{ Course}}"
 
     
