@@ -4,7 +4,7 @@
   tasks:
   - name: print the variables
     vars:
-     Course: Ansible
+     Course: ansible
     ansible.builtin.debug:
       msg: "Course is: {{ Course }}" #Double flower braces inside the variable name to get the variable
 
