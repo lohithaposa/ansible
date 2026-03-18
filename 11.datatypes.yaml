@@ -1,0 +1,22 @@
+- name: data types
+  hosts: local
+  connection: local
+  vars:
+   Course: "DevOps"
+   Hours: "120"
+   Is_live: "true"
+   Details: # map/dic
+    Months: 4
+    Trainer: "Sam"
+  Topics: #Lists 
+    - Docker
+    - K8
+    - Ansible
+  tasks:
+   - name: Print
+     ansible.builtin.debug:
+      msg: |
+       COURSE: {{ Course }}
+       Duration: {{ Hours }}
+       Is_live: {{ Is_live }}
+       
