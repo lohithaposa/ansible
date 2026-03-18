@@ -9,6 +9,6 @@
     vars:
       Course: "Ansible"
     ansible.builtin.debug:
-      msg: "Course is: {{ Course }} , Traininghours is: {{ TrainingHours }}"
+      msg: "Course is: {{ Course }} , Traininghours is: {{ Traininghours }}"
 # Inheritence : globally getting the vars,overide the vars.
  
