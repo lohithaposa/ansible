@@ -4,12 +4,12 @@
   tasks:
   - name: Install Nginx
     ansible.builtin.package: #(Heterogenous Distribution:  Ansible will connect to RHEL ,package manager is yum or dnf ...it will convert to dnf ..under gathering facts )
-      name: Nginx
+      name: nginx
       state: present
 
   - name: Start Nginx
     ansible.builtin.service:
       name: nginx
       state: started
-      enable: yes 
+      enabled: yes 
      
