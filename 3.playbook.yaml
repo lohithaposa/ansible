@@ -1,8 +1,9 @@
+
 - name: playbook
   hosts: web
-#hosts: frontend
+  #hosts: frontend
   tasks:
-  - name : print hello
+  - name: print hello
     ansible.builtin.debug:
     msg: "Hello"
  
