@@ -1,0 +1,7 @@
+-name: playbook
+#hosts: web
+hosts: frontend
+tasks:
+  ansibile.builtin.debug:
+   msg: Hello
+ 
