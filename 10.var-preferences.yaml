@@ -10,9 +10,9 @@
       prompt: Please enter username
       private: false
   tasks:
-    - name: Task level variable
-      Course: "Ansible from task level"
-      ansible.builtin.debug:   
-        msg: "Course is: {{ Course}}"
+  - name: Task level variable
+    Course: "Ansible from task level"
+    ansible.builtin.debug:   
+      msg: "Course is: {{ Course}}"
 
     
