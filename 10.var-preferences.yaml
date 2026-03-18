@@ -14,7 +14,7 @@
     # vars:
     #  Course: "Ansible from task level"
     ansible.builtin.debug:   
-      msg: "Course is: {{ Course }}"
+      msg: "Name is: {{ NAME }}"
 
 
 #!.Args
