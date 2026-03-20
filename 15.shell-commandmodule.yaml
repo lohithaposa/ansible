@@ -5,3 +5,9 @@
     - name: Command module test
       ansible.builtin.shell: cat /etc/passwd | grep root
       register: users_output
+
+    - name: print users_output
+      ansible.builtin.debug:
+       msg: "Output: (( register))"  
+
+
