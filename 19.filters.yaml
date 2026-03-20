@@ -4,7 +4,7 @@
   vars:
     topics: linux, shell, mysql
     course: "DevOps"
-    myip: "890.23.12232.90"
+    myIp: "890.23.12232.90"
     tagsMap:
       name: ansible
       project: roboshop
@@ -58,6 +58,11 @@
       ansible.builtin.debug:   
          msg: "{{ course | lower }}"
 
+    # - name: check ipv4
+    #   ansible.builtin.ipv4:
+    #     msg: "{{ myip | ansible.utils.ipv4 }}"             
+
+
     - name: check ipv4
-      ansible.builtin.ipv4:
-        msg: "{{ myip | ansible.utils.ipv4 }}"             
+      ansible.builtin.debug:
+      msg: "{{ myIp | ansible.utils.ipv4 }}"
