@@ -8,6 +8,6 @@
 
     - name: print users_output
       ansible.builtin.debug:
-       msg: "Output: {{ register }} "  
+       msg: "Output: {{ users_output }} " 
 
 
