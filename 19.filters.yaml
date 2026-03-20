@@ -49,7 +49,7 @@
 
     - name: convert Lower to upper case
       ansible.builtin.set_fact:
-      ansible.builtin.debug:   
+      #ansible.builtin.debug:   
          msg: "{{ course | upper }}"    
 
     - name: convert upper to Lower case
