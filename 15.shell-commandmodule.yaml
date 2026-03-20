@@ -12,7 +12,7 @@
 
 
     - name: Command module test
-      ansible.builtin.shell: ls -ltr > files.txt
+      ansible.builtin.shell: ls -ltr >> files.txt
       register: files_output
 
     - name: print files
