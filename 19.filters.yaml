@@ -55,4 +55,4 @@
 
     - name: convert upper to Lower case
       ansible.builtin.debug:   
-         msg: "{{ Docker | lower }}"        
+         msg: "{{ COURSE | lower }}"        
