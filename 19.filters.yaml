@@ -4,7 +4,7 @@
   vars:
     topics: linux, shell, mysql
     course: "DevOps"
-    mypip: "890.23.12232.90"
+    myip: "890.23.12232.90"
     tagsMap:
       name: ansible
       project: roboshop
