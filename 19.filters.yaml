@@ -6,4 +6,8 @@
   tasks:
     - name: greeting
       ansible.builtin.debug:
-       msg: " Hi ,{{ Greeting | default ('Good Morning') }}"  
+       msg: " Hi ,{{ Greeting | default ('Good Morning') }}"  # deafult is the filter, when variable is undefined or empty 
+
+    - name: convert string to lists
+      ansible.builtin.debug:
+        msg: " {{ topics | split (' ,')}}"   
