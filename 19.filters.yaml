@@ -1,0 +1,9 @@
+- name : Filters
+  hosts: local
+  connection: local
+  vars:
+    topics: linux, shell, mysql
+  tasks:
+    - name: greeting
+      ansible.builtin.debug:
+       msg: " Hi ,{{ Greeting | split(',')}}"  
