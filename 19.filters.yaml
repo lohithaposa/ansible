@@ -3,12 +3,12 @@
   connection: local
   vars:
     topics: linux, shell, mysql
-  tagsMap:
+    tagsMap:
       name: ansible
       project: roboshop
       component: catalogue  
 
-  tagsList: [
+    tagsList: [
         {
             "key": "name",
             "value": "ansible"
@@ -29,8 +29,8 @@
 
     - name: convert string to lists
       ansible.builtin.debug:
-        msg: " {{ topics | split (' ,')}}"   
+        msg: " {{ topics | split (',')}}"   
 
     - name: convert lists to map
       ansible.builtin.debug:
-       msg: "{{ tagsList | dic2items }}"    
+       msg: "{{ tagsList | dict2items }}"    
