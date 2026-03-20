@@ -3,6 +3,21 @@
   connection: local
   vars:
     topics: linux, shell, mysql
+
+  tagsList: [
+        {
+            "key": "name",
+            "value": "ansible"
+        },
+        {
+            "key": "project",
+            "value": "roboshop"
+        },
+        {
+            "key": "component",
+            "value": "catalogue"
+        }
+    ]  
   tasks:
     - name: greeting
       ansible.builtin.debug:
@@ -11,3 +26,7 @@
     - name: convert string to lists
       ansible.builtin.debug:
         msg: " {{ topics | split (' ,')}}"   
+
+    - name: convert lists to map
+      ansible.builtin.debug:
+       msg: "{{ tagsList | dic2items }}"    
