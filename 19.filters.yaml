@@ -6,4 +6,4 @@
   tasks:
     - name: greeting
       ansible.builtin.debug:
-       msg: " Hi ,{{ Greeting | split(',') }}"  
+       msg: " Hi ,{{ Greeting | default ('Good Morning') }}"  
