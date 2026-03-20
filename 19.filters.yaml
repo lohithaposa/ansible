@@ -60,4 +60,4 @@
 
     - name: check ipv4
       ansible.builtin,ipv4:
-        msg: "{{ myip | ansible.utilis.ipv4 }}"             
+        msg: "{{ myip | ansible.utils.ipv4 }}"             
