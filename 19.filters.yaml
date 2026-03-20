@@ -4,6 +4,7 @@
   vars:
     topics: linux, shell, mysql
     course: "DevOps"
+    mypip: "890.23.12232.90"
     tagsMap:
       name: ansible
       project: roboshop
@@ -55,4 +56,8 @@
 
     - name: convert upper to Lower case
       ansible.builtin.debug:   
-         msg: "{{ course | lower }}"        
+         msg: "{{ course | lower }}"
+
+    - name: check ipv4
+      ansible.builtin,ipv4:
+        msg: "{{ myip | ansible.utilis.ipv4 }}"             
