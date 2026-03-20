@@ -3,6 +3,10 @@
   connection: local
   vars:
     topics: linux, shell, mysql
+  tagsMap:
+      name: ansible
+      project: roboshop
+      component: catalogue  
 
   tagsList: [
         {
